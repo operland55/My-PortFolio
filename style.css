@@ -1,0 +1,6 @@
+@import url(reset.css);
+
+body {
+	height: 100vh;
+	background-image: url(/back.png);
+}

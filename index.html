@@ -18,40 +18,222 @@
 
 <body>
   <!-- Navbar -->
-  <nav id="navbar">
-    <div class="navbar__logo">
-      <img src="./imgs/logo.png" alt="logo">
-      <a href="#">YoonJae</a>
-    </div>
+  <nav id="navbar" class="active">
+    <div class="container">
+      <div class="navbar__logo">
+        <img src="./imgs/logo.png" alt="logo">
+      </div>
+      <div class="navbar__menu">
+        <ul class="navbar__menu__list">
+          <li class="navbar__menu__item active">Home</li>
+          <li class="navbar__menu__item">Profile</li>
+          <!-- <li class="navbar__menu__item">Skills</li> -->
+          <li class="navbar__menu__item">My Work</li>
+          <li class="navbar__menu__item">Contact</li>
+        </ul>
+      </div>
+      <!-- Toggle btn -->
 
-    <div class="navber__menu">
-      <ul class="navber_menu">
-        <li class="navber__menu_item">Home</li>
-        <li class="navber__menu_item">About</li>
-        <li class="navber__menu_item">Skills</li>
-        <li class="navber__menu_item">My Work</li>
-        <li class="navber__menu_item">Contact</li>
-      </ul>
+      <div class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </div>
     </div>
   </nav>
+
+  <!-- Home -->
   <section id="home">
     <div class="home__main">
       <div class="home__main__title">
-        <h1>Design <br /> Growth</h1>
+        <h1 class="title__first">Design</h1>
+        <h1 class="title__second">Growth.</h1>
         <p>회사와 함께 성장하는 웹 개발자</p>
-        <button>See My Work</button>
       </div>
 
       <div class="home__main__img">
         <img src="./imgs/title_img.png" alt="title-img-logo">
       </div>
+
+    </div>
+    <div class="main-title-btn">
+      <button>See My Work</button>
+    </div>
+
+  </section>
+
+
+  <!-- profile -->
+  <section id="profile">
+    <h1>Profile</h1>
+    <div class="profile__box">
+
+
+      <div class="box__left">
+        <div class="img-box">
+          <img src="./imgs/myImg.jpg" alt="MyImg">
+        </div>
+        <h1>안녕하세요 <br />신입 웹 개발자 정윤재입니다</h1>
+      </div>
+
+      <div class="box__right">
+        <div class="profile__about">
+          <h1>
+            '느린 것을 두려워 말고, 멈추는 것을 두려워하라' <p>
+              라는 말이 있습니다.<br />
+              어떤 분야든 배움에는 끝이 없습니다.<br />
+              겸손의 자세로 배움을 게을리하지 않고,<br />
+              빠르게 변화하는 트렌드에 맞춰 발전하는<br />
+              프론트엔드 개발자가 되겠습니다.<br />
+            </p>
+          </h1>
+
+          <div class="profile__info">
+            <p>
+              <span>나이</span>
+              91.02.03
+            </p>
+            <p><span>E-mail</span>
+              operland55@naver.com
+            </p>
+          </div>
+        </div>
+
+        <div class="profile__skill">
+          <h2 class="profile__title">Skills</h2>
+          <ul class="profile__skills">
+            <li class="profile__skills__item">
+              <img src="./imgs/skill_icon_01.png" alt="HTML-ICON">
+            </li>
+            <li class="profile__skills__item">
+              <img src="./imgs/skill_icon_02.png" alt="CSS-ICON">
+            </li>
+            <li class="profile__skills__item">
+              <img src="./imgs/skill_icon_03.png" alt="JS-ICON">
+            </li>
+            <li class="profile__skills__item">
+              <img src="./imgs/skill_icon_04.png" alt="JQUERY-ICON">
+            </li>
+            <li class="profile__skills__item">
+              <img src="./imgs/skill_icon_05.png" alt="SASS-ICON">
+            </li>
+            <li class="profile__skills__item">
+              <img src="./imgs/skill_icon_06.png" alt="REACT-ICON">
+            </li>
+            <li class="profile__skills__item">
+              <img src="./imgs/skill_icon_07.png" alt="TS-ICON">
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </section>
+  <section id="project">
+    <div class="project__container">
+      <h1 class="project__title">ProJect</h1>
+
+      <div class="project__content">
+        <div class="project__img__box">
+          <img src="./imgs/AboutMe.jpg" alt="movieSite">
+          <a href="https://github.com/operland55/About-Me">GitHub Page로 가기</a>
+        </div>
+
+        <div class="project__info">
+          <h1>My About</h1>
+          <ul>
+            <li>사용언어: HTML,CSS,JS</li>
+            <li>주요기능: Intersection Observer API 이용한 이미지와 그거에 맞는 설명창이 나온다</li>
+            <li>참여도: 100%</li>
+          </ul>
+
+          <a href="https://operland55.github.io/About-Me/">VIEW</a>
+        </div>
+      </div>
+
+      <div class="project__content">
+        <div class="project__img__box">
+          <img src="./imgs/NetFlix.jpg" alt="NetFlixImg">
+          <a href="https://github.com/operland55/NetFlix-Site">GitHub Page로 가기</a>
+        </div>
+
+        <div class="project__info">
+          <h1>NetFlix</h1>
+          <ul>
+            <li>사용언어: HTML,CSS,JS</li>
+            <li>주요기능: Intersection Observer API 이용한 이미지와 그거에 맞는 설명창이 나온다</li>
+            <li>참여도: 100%</li>
+          </ul>
+          <a href="https://beautiful-custard-737306.netlify.app/">VIEW</a>
+        </div>
+      </div>
+
+      <div class="project__content">
+        <div class="project__img__box">
+          <img src="./imgs/Tomorrow-Home-Mobile.jpg" alt="내일의집Img">
+          <a href="https://github.com/operland55/Tomorrow-Home">GitHub Page로 가기</a>
+        </div>
+
+        <div class="project__info">
+          <h1>Tomorrow-Home</h1>
+          <ul>
+            <li>사용언어:HTML,SASS,JAVASCRIPT</li>
+            <li>주요기능:SASS를 이용한 반응형 컴포넌트 SLIDER 라이브러리 JS를 이용한 클릭이벤트 스크롤이벤트를 사용하였다</li>
+            <li>참여도: 100%</li>
+
+          </ul>
+          <a href="https://bucolic-puppy-4b4fce.netlify.app/">VIEW</a>
+        </div>
+      </div>
+
+      <div class="project__content">
+        <div class="project__img__box">
+          <img src="./imgs/movieScreen.jpg" alt="movieSiteImg">
+          <a href="https://github.com/operland55/PortFolio-WebSite/tree/main">GitHub Page로 가기</a>
+        </div>
+
+        <div class="project__info">
+          <h1>SnowRainCloudMovie</h1>
+          <ul>
+            <li>사용언어:React,Sass,</li>
+            <li>주요기능:라이브러리를 이용한 Slide기능 회원가입 기능과 로그인기능등을 만들었다</li>
+            <li>참여도: 100%</li>
+          </ul>
+          <a href="https://relaxed-crumble-8ec459.netlify.app/">VIEW</a>
+        </div>
+      </div>
+
+      <div class="project__content">
+        <div class="project__img__box">
+          <img src="./imgs/recipe.jpg" alt="recipeSiteImg">
+          <a href="https://github.com/operland55/Delicious-Recipes">GitHub Page로 가기</a>
+        </div>
+
+        <div class="project__info">
+          <h1>Recipe Site</h1>
+          <ul>
+            <li>사용언어:React,Sass</li>
+            <li>주요기능:Search 기능과 음식을 클릭하면 그거에맞는 레시피 화면등 만들었다</li>
+            <li>참여도: 100%</li>
+          </ul>
+          <a href="https://jocular-concha-3b2ca9.netlify.app/">VIEW</a>
+        </div>
+      </div>
     </div>
   </section>
-  <section id="about"></section>
-  <section id="skills"></section>
-  <section id="work"></section>
-  <section id="contact"></section>
-  <section id="about"></section>
+  <section id="contact" class="section">
+    <div class="contact__content">
+      <div class="contact__img__box">
+        <!-- <img src="./imgs/아이스크림.png" alt="아이스크림-logo"> -->
+      </div>
+      <h1>Contact</h1>
+      <div class="contact__info">
+
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>

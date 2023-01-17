@@ -101,8 +101,11 @@ section {
 	display: block;
 }
 body {
+	overflow-x: hidden;
 	line-height: 1;
+	background: linear-gradient(180deg, #dbe9f6 15%, #fefcc9 44%, #f7d0d5 100%);
 }
+
 ol,
 ul {
 	list-style: none;
@@ -121,4 +124,9 @@ q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #111;
 }

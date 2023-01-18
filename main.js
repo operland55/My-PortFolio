@@ -31,7 +31,8 @@ window.addEventListener("scroll", () => {
 let callback = (entries, observer) => {
 	entries.forEach((item) => {
 		if (item.isIntersecting) {
-			item.target.style.right = "0";
+			item.target.style.transform = "translateX(0%)";
+			item.target.style.opacity = "1";
 		}
 	});
 };

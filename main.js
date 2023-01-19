@@ -22,7 +22,13 @@ const $mainBtn = document.querySelector(".main-title-btn");
 $mainBtn.addEventListener("click", () => {
 	$project.scrollIntoView({ behavior: "smooth" });
 });
-
+// menu btn open
+const $menuBtn = document.querySelector(".navbar__toggle-btn");
+console.log($menuBtn);
+$menuBtn.addEventListener("click", () => {
+	console.log(1);
+	$navbarMenu.classList.toggle("open");
+});
 // header scroll 하면 bg색 바꾸기
 const $navbar = document.querySelector("#navbar");
 const $navbarHeight = $navbar.getBoundingClientRect().height;
@@ -35,7 +41,7 @@ window.addEventListener("scroll", () => {
 	}
 });
 
-//project 목록에 맞춰 투명도
+//프로젝트 리스트에 맞춰 투명도
 const projects = document.querySelectorAll(".project__content");
 let callback = (entries, observer) => {
 	entries.forEach((item) => {

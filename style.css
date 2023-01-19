@@ -139,11 +139,8 @@ a {
 	width: 100%;
 	transition: 0.5s;
 }
-
-.active {
+#navbar.active {
 	background-color: #fff;
-	box-shadow: rgb(50 50 93 / 25%) 0px 8px 13px -5px,
-		rgb(0 0 0 / 30%) 0px 8px 16px -8px;
 }
 #navbar > .container {
 	display: flex;
@@ -419,14 +416,14 @@ a {
 	backdrop-filter: blur(0px);
 	-webkit-backdrop-filter: blur(0px);
 	border: 1px solid white;
-	transform: translateX(50%);
+	transform: translateX(0);
 	opacity: 0;
-	transition: 2500ms;
+	transition: 3500ms;
 }
 
 @keyframes slide-right {
 	0% {
-		transform: translateX(50%);
+		/* transform: translateX(50%); */
 		opacity: 0;
 	}
 	100% {
@@ -436,7 +433,7 @@ a {
 }
 .project__content > .project__img__box {
 	position: relative;
-	padding: 20px 0;
+	margin: 20px 0;
 	width: 35vh;
 	height: 162px;
 }
@@ -610,6 +607,9 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+	.navbar__logo {
+		width: 65px;
+	}
 	.navbar__menu {
 		display: block;
 		color: #71787d;
@@ -657,6 +657,8 @@ a {
 	}
 	.home__main__title > p {
 		font-size: 18px;
+		text-align: start;
+		margin-left: 20px;
 	}
 	.home__main__title > .title__first {
 		text-align: start;
@@ -665,6 +667,7 @@ a {
 		width: 45%;
 	}
 	.main-title-btn {
+		margin-top: 0;
 		text-align: start;
 	}
 	/* profile */
@@ -725,7 +728,7 @@ a {
 	}
 	.project__content > .project__img__box,
 	.project__content > .project__info {
-		padding: 53px 0;
+		margin: 53px 0;
 	}
 	.project__info {
 		align-items: flex-start;
@@ -781,22 +784,28 @@ a {
 
 @media screen and (min-width: 1200px) {
 	#navbar > .container {
-		height: 80px;
+		height: 62px;
 		align-items: center;
 	}
-	.navbar__logo {
-		width: 62px;
-	}
+
 	.navbar__menu {
 		font-size: 20px;
+	}
+	#home {
+		padding-top: 50px;
 	}
 	.home__main__title > h1 {
 		font-size: 140px;
 	}
 	.home__main__title > p {
 		font-size: 24px;
+		margin-top: 50px;
+		margin-left: 20px;
+		text-align: start;
 	}
-
+	.home__main__img {
+		/* width: 580px; */
+	}
 	.main-title-btn {
 		max-width: 1150px;
 		margin: 0 auto;
@@ -847,9 +856,12 @@ a {
 		transform: translate(-200%, -50%);
 		z-index: 9;
 		opacity: 1;
-		animation: slide-in-left 0.5s ease-in-out both;
+		animation: 0.5s ease-in-out both;
 		width: 12.5rem;
 		height: 25.25rem;
+	}
+	.contact__info p {
+		font-weight: 700;
 	}
 }
 

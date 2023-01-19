@@ -24,9 +24,8 @@ $mainBtn.addEventListener("click", () => {
 });
 // menu btn open
 const $menuBtn = document.querySelector(".navbar__toggle-btn");
-console.log($menuBtn);
+
 $menuBtn.addEventListener("click", () => {
-	console.log(1);
 	$navbarMenu.classList.toggle("open");
 });
 // header scroll 하면 bg색 바꾸기

@@ -54,18 +54,23 @@ const observer = new IntersectionObserver(callback);
 projects.forEach((project) => observer.observe(project));
 
 // contact Ele 옵저보
-const $contactImg = document.querySelector(".contact__img__box");
 
+const $contact = document.querySelector("#contact");
+const $contactImg = document.querySelector(".contact__img__box");
+const $contactinfo = document.querySelector(".contact__info");
+const $contacticon = document.querySelector(".contact__icon");
 let contactCallback = (entries, observer) => {
 	entries.forEach((i) => {
 		if (i.isIntersecting) {
-			i.target.style.animationName = "slide-in-left";
+			$contactImg.style.animationName = "slide-in-left";
+			$contacticon.style.animationName = "rotateUp";
+			$contactinfo.style.animationName = "rotateUp";
 		}
 	});
 };
 const contactObserver = new IntersectionObserver(contactCallback);
 
-contactObserver.observe($contactImg);
+contactObserver.observe($contact);
 
 // navbar
 

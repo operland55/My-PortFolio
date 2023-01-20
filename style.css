@@ -861,7 +861,9 @@ a {
 	#home {
 		padding-top: 50px;
 	}
-
+	.home__main {
+		margin-top: 170px;
+	}
 	.home__main__title > h1 {
 		font-size: 140px;
 	}
